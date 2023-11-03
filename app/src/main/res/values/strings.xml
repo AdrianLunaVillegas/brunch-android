@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Brunch</string>
-    <string name="brunch_event">Brunch Electronik *</string>
+    <string name="brunch_event">Brunch Electronik #%d</string>
     <string name="brunch_date">2 de Septiembre, 2023</string>
-    <string name="brunch_location_and_hour">Plaça Major de Nou Barris-13:00 a 22:00hs.</string>
-    <string name="buy_ticket_brunch">Buy Ticket</string>
+    <string name="brunch_location_and_hour">Plaça Major de Nou Barris -- 13:00 a 22:00hs.</string>
+    <string name="brunch_buy_ticket">Buy Ticket</string>
+    <string name="brunch_info">More info</string>
 
 </resources>
