@@ -25,7 +25,7 @@ class ArtistViewHolder(binding: ItemArtistBinding) :
     private fun configButtonBuy(
         url: String,
         listener: ArtistListener
-    ){
+    ) {
         viewBinding.btnBuy.setOnClickListener {
             listener.onUrlClick(url)
         }

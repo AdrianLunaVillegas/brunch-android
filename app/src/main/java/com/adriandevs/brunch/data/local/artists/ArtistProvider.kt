@@ -4,7 +4,7 @@ import com.adriandevs.brunch.domain.model.Artist
 import com.adriandevs.brunch.domain.model.ArtistEvent
 
 object ArtistProvider {
-    val artistList = listOf(
+    val artistList = arrayListOf(
         Artist(
             name = "Ilario Alicante",
             event = getArtistFirstEvent(),

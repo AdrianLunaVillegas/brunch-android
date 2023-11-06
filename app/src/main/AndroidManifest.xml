@@ -24,11 +24,11 @@
 
         <activity
             android:name=".presentation.ui.events.EventActivity"
-            android:exported="false"></activity>
+            android:exported="false"/>
 
         <activity
             android:name=".presentation.ui.artists.ArtistActivity"
-            android:exported="false"></activity>
+            android:exported="false"/>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_welcome_brunch"
+        android:src="@drawable/ic_brunch_playstore"
         app:cardCornerRadius="20dp"
         app:layout_constraintHeight_percent="0.25"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_welcome_brunch"
+        android:src="@drawable/ic_brunch_playstore"
         app:layout_constraintHeight_percent="0.75"
         app:layout_constraintTop_toBottomOf="@id/imageViewBrunch"/>
 

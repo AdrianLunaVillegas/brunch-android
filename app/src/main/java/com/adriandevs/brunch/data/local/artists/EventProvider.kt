@@ -3,7 +3,7 @@ package com.adriandevs.brunch.data.local.artists
 import com.adriandevs.brunch.domain.model.Event
 
 object EventProvider {
-    val eventList = listOf<Event>(
+    val eventList = arrayListOf<Event>(
         Event(
             id = 19,
             date = "2, Septiembre 2023",

@@ -17,10 +17,10 @@ class WelcomeActivity : AppCompatActivity() {
         binding = ActivityWelcomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         EventProvider.eventList//  This is how we access the list of events/ Así accedemos a la lista de eventos
-        configButton()
+        configButtons()
     }
 
-    private fun configButton() {
+    private fun configButtons() {
         binding.apply {
             btnArtists.setOnClickListener {
                 launchActivity(ArtistActivity::class.java)
@@ -40,5 +40,4 @@ class WelcomeActivity : AppCompatActivity() {
         val intent = intent(activity)
         startActivity(intent)
     }
-
 }

@@ -10,4 +10,8 @@
     <color name="blue_light">#E1DCFF</color>
     <color name="orange">#FF8A43</color>
     <color name="orange_custom">#FF8A43</color>
+    <color name="corner_radius_button">#8579D5</color>
+    <color name="color_button_event">#2B665E</color>
+    <color name="color_corner_radius_title">#AEE1799C</color>
+
 </resources>
