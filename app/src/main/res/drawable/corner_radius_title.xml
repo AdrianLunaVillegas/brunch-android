@@ -2,8 +2,8 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android" >
     <item >
         <shape android:shape="rectangle"  >
-            <corners android:radius="@android:dimen/app_icon_size" />
-            <stroke android:width="3dp" android:color="@color/white"/>
+            <corners android:radius="@dimen/brunch_48_dp" />
+            <stroke android:width="@dimen/brunch_3_dp" android:color="@color/white"/>
             <solid android:color="@color/color_corner_radius_title" />
         </shape>
     </item>

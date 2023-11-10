@@ -1,6 +1,5 @@
 package com.adriandevs.brunch.domain.model
 
-@immutable
 data class Event(
     val id: Int,
     val date: String,

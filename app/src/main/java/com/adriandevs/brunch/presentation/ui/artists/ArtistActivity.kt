@@ -13,6 +13,7 @@ import com.adriandevs.brunch.presentation.ui.artists.adapter.ArtistListener
 class ArtistActivity : AppCompatActivity(), ArtistListener {
 
     private lateinit var binding: ActivityArtistBinding
+    private val artistAdapter = ArtistAdapter(artistList, this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,13 +27,11 @@ class ArtistActivity : AppCompatActivity(), ArtistListener {
         startActivity(browserIntent)
     }
 
-    private lateinit var artistAdapter: ArtistAdapter
     fun initRecyclerView() {
-        binding.apply {
-            artistAdapter = ArtistAdapter(artistList, this@ArtistActivity)
-            recyclerARTIST.layoutManager =
+        binding.recyclerArtist.apply {
+            layoutManager =
                 LinearLayoutManager(this@ArtistActivity, LinearLayoutManager.VERTICAL, false)
-            recyclerARTIST.adapter = artistAdapter
+            adapter = artistAdapter
         }
     }
 }
