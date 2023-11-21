@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:cardBackgroundColor="@color/blue_light"
+        app:cardCornerRadius="@dimen/brunch_40_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/brunch_16_dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/brunchTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:cardBackgroundColor="@color/orange"
+                app:layout_constraintBottom_toTopOf="@+id/brunchDate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/brunch_event">
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/brunchDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/brunch_30_dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/brunch_text_25_sp"
+                android:textStyle="bold"
+                tools:text="@string/brunch_date" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/brunchLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/brunch_text_18_sp"
+                tools:text="@string/brunch_location_and_hour" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewArtist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/brunch_25_dp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/brunch_text_40_sp"
+                android:textStyle="bold"
+                tools:text="Marco Faraone" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBuy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/brunch_50_dp"
+        android:layout_marginHorizontal="@dimen/brunch_40_dp"
+        android:layout_marginBottom="@dimen/brunch_20_dp"
+        android:background="@drawable/corner_radius_button_event"
+        android:text="@string/brunch_buy_ticket"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnInfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/brunch_50_dp"
+        android:layout_marginHorizontal="@dimen/brunch_40_dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/corner_radius_button_event"
+        android:text="@string/brunch_info"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
